@@ -1,7 +1,4 @@
 node {
-  stage 'Checkout'
-  git 'https://github.com/ianclark2992/jenkins-ecr.git'
- 
   stage 'Docker build'
   docker.build('demo')
  
